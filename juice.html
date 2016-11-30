@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <title>sljsoi</title>
+      <style>
+         html {
+            background: rgb(167, 213, 227);
+            color: white;
+         }
+
+         nav {
+            height:  150px;
+         }
+
+         .container {
+            position: relative;
+            width: 700px;
+            margin: 0 auto;
+         }
+
+         .container * {
+            display: inline-block;
+         }
+
+         .container h1 {
+            position: absolute;
+            left: 0;
+         }
+
+         .container ul {
+            position: absolute;
+            right: 0;
+         }
+
+         .container ul li {
+            margin-left: 10px;
+         }
+
+         .glass {
+            position: relative;
+            border: 15px solid white;
+            width: 300px;
+            height: 500px;
+            margin: 0 auto;
+         }
+
+         .glass-reflection {
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            width: 0;
+            height: 400px;
+            margin-top: 100px;
+            border: 15px solid white;
+         }
+
+         .juice {
+            position: absolute;
+            bottom: 0;
+            width: 300px;
+            height: 400px;
+            background: orange;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <nav>
+            <div class="container">
+               <h1>Carrot Juice Lovers</h1>
+               <ul>
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Carrots</li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+
+      <main>
+         <div class="glass">
+            <div class="juice"></div>
+            <div class="glass-reflection"></div>
+         </div>
+      </main>
+   </body>
+</html>
