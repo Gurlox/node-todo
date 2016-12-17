@@ -1,0 +1,111 @@
+html {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    color: #333;
+    background: #333;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    line-height: 2rem;
+    font-size: 1.75rem;
+}
+
+p {
+    line-height: 1rem;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+header {
+    width: 100%;
+    height: 9rem;
+    background: rgb(8, 86, 115);
+    color: black;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.todo-form input[type=text] {
+    width: 20rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.todo-form input[type=submit] {
+    width: 5rem;
+    height: 1.5rem;
+    font-size: 0.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+    margin-top: 2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40rem;
+    border-radius: 10px;
+    background: rgb(246, 246, 246);
+    box-shadow: 0 0 10px black;
+}
+
+main ul {
+    margin-left: 0;
+    margin-bottom: 0.25rem;
+    padding: 0;
+    list-style-type: none;
+}
+
+main ul li {
+    min-height: 4rem;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.todo-content {
+    display: flex;
+    justify-content: center;;
+    background: rgb(191, 60, 60);
+    font-weight: bold;
+}
+
+.todo-data div:first-of-type {
+    font-size: 0.75rem;
+}
+
+.todo-data {
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-date {
+    font-size: 0.5rem;
+    color: rgb(89, 89, 89);
+}
+
+.todo-date time {
+    font-weight: bold;
+}
+
+footer {
+    color: rgb(32, 32, 32);
+    font-size: 0.5rem;
+    position: fixed;
+    right: 0.5rem;
+    bottom: 0.5rem;
+}

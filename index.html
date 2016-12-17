@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<html lang="pl">
-    <head>
-        <meta charset="UTF-8">
-        <title>Node TODO</title>
-    </head>
-    <body>
-        <header>
-            <h1>TODO LIST</h1>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>After</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div>
+            <h1>TODO List</h1>
             <p>
-                <form>
+                <form class="todo-form">
                     <div>
-                        <input type="text" name="todo-content" placeholder="Dopisz do swojej listy nową rzecz">
+                        <input type="text" name="todo-content" placeholder="Napisz co musisz zrobić">
                     </div>
-                    <input type="submit" value="DODAJ">
+                    <input type="submit" value="Dodaj">
+                    <input type="submit" value="Usuń zaznaczone">
                 </form>
-                <button>USUŃ ZAZNACZONE</button>
             </p>
-        </header>
+        </div>
+    </header>
 
-        <main>
+    <main>
+        <div class="container">
             <ul>
                 <li>
-                    <div>
-                        <strong>Treść TODO</strong>
-                    </div>
-                    <div>
-                        Data dd/mm/yyyy
-                    </div>
-                    <div>
-                        <input type="checkbox" name="done"> Zrobione?
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <strong>Treść TODO</strong>
-                    </div>
-                    <div>
-                        Data dd/mm/yyyy
-                    </div>
-                    <div>
-                        <input type="checkbox" name="done"> Zrobione?
+                    <div class="todo-content">Treść TODO Treść TODO Treść TODO Treść TODO Treść TODO Treść TODO</div>
+                    <div class="todo-data">
+                        <div><input type="checkbox" name="done"> Zrobione?</div>
+                        <div class="todo-date">Data <time>dd/mm/yyyy</time></div>
                     </div>
                 </li>
             </ul>
-        </main>
-    </body>
+            <ul>
+                <li>
+                    <div class="todo-content">Treść TODO Treść TODO</div>
+                    <div class="todo-data">
+                        <div><input type="checkbox" name="done"> Zrobione?</div>
+                        <div class="todo-date">Data <time>dd/mm/yyyy</time></div>
+                    </div>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <div class="todo-content">Treść TODO Treść TODO Treść TODO Treść TODO</div>
+                    <div class="todo-data">
+                        <div><input type="checkbox" name="done"> Zrobione?</div>
+                        <div class="todo-date">Data <time>dd/mm/yyyy</time></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <strong>Jan Czerwiński</strong> Warsztaty Sealcode
+    </footer>
+</body>
 </html>
