@@ -2,18 +2,22 @@
   "name": "todo",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "watchify": "watchify public/assets/js/app.js -o public/build/bundle.js --debug",
     "nodemon": "nodemon ."
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "express": "^4.14.0"
+    "express": "^4.14.0",
+    "qwest": "^4.4.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "browserify": "^13.3.0",
+    "nodemon": "^1.11.0",
+    "watchify": "^3.8.0"
   }
 }

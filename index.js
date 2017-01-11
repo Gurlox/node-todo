@@ -1,6 +1,7 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var app = express();
+var path = require('path');
 
 var todos = [
    {
@@ -23,7 +24,13 @@ var todos = [
    }
 ];
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
+
+app.use("/", express.static(path.join(__dirname, 'public')));
+
+app.get('/', function(req, res){
+   res.sendFile('index.html');
+});
 
 app.get('/api/todos', function(req, res){
    res.status(200).send(todos);
